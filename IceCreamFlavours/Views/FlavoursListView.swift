@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct FlavoursListView: View {
+    
+    // MARK: Computed properties
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            
+            List(flavours) { currentFlavour in
+                
+                HStack(alignment: .center) {
+                    
+                    Image(currentFlavour.heroImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                    
+                    Text(currentFlavour.name)
+                        .font(.title2)
+                        .bold()
+                        .fontDesign(.rounded)
+                    
+                }
+                
+            }
+            .listStyle(.plain)
+            .navigationTitle("Available Flavours")
+            
         }
-        .padding()
     }
 }
 
