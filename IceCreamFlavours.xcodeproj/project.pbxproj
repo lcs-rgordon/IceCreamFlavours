@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		81DB5CB12D348F1A00BDACAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DB5CAB2D348F1A00BDACAC /* Preview Assets.xcassets */; };
+		81DB5CB22D348F1A00BDACAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DB5CAD2D348F1A00BDACAC /* Assets.xcassets */; };
+		81DB5CB32D348F1A00BDACAC /* FlavoursListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */; };
+		81DB5CB42D348F1A00BDACAC /* IceCreamFlavoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		81DB5C9A2D348F0F00BDACAC /* IceCreamFlavours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamFlavours.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81DB5CAB2D348F1A00BDACAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81DB5CAD2D348F1A00BDACAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavoursListView.swift; sourceTree = "<group>"; };
+		81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavoursApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		81DB5C9C2D348F0F00BDACAC /* IceCreamFlavours */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = IceCreamFlavours;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		81DB5C972D348F0F00BDACAC /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		81DB5C912D348F0F00BDACAC = {
 			isa = PBXGroup;
 			children = (
-				81DB5C9C2D348F0F00BDACAC /* IceCreamFlavours */,
+				81DB5CB02D348F1A00BDACAC /* IceCreamFlavours */,
 				81DB5C9B2D348F0F00BDACAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,41 @@
 				81DB5C9A2D348F0F00BDACAC /* IceCreamFlavours.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		81DB5CAC2D348F1A00BDACAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				81DB5CAB2D348F1A00BDACAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81DB5CB02D348F1A00BDACAC /* IceCreamFlavours */ = {
+			isa = PBXGroup;
+			children = (
+				81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */,
+				81DB5CB62D348F2200BDACAC /* Model */,
+				81DB5CB52D348F1D00BDACAC /* Views */,
+				81DB5CAC2D348F1A00BDACAC /* Preview Content */,
+				81DB5CAD2D348F1A00BDACAC /* Assets.xcassets */,
+			);
+			path = IceCreamFlavours;
+			sourceTree = "<group>";
+		};
+		81DB5CB52D348F1D00BDACAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81DB5CB62D348F2200BDACAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +97,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				81DB5C9C2D348F0F00BDACAC /* IceCreamFlavours */,
 			);
 			name = IceCreamFlavours;
 			packageProductDependencies = (
@@ -109,6 +144,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DB5CB12D348F1A00BDACAC /* Preview Assets.xcassets in Resources */,
+				81DB5CB22D348F1A00BDACAC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DB5CB32D348F1A00BDACAC /* FlavoursListView.swift in Sources */,
+				81DB5CB42D348F1A00BDACAC /* IceCreamFlavoursApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
