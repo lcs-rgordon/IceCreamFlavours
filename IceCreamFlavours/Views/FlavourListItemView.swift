@@ -40,12 +40,18 @@ struct FlavourListItemView: View {
     }
 }
 
-//#Preview {
-//    FlavourListItemView(flavourToShow: flavours.first!)
-//        .padding()
-//}
-//
-//#Preview {
-//    FlavourListItemView(flavourToShow: flavours[1])
-//        .padding()
-//}
+#Preview {
+    
+    @Previewable @State var flavour = flavours.first!
+    
+    FlavourListItemView(flavourToShow: $flavour)
+        .padding()
+}
+
+#Preview {
+    
+    @Previewable @State var flavour = flavours[1]
+    
+    FlavourListItemView(flavourToShow: $flavour)
+        .padding()
+}
