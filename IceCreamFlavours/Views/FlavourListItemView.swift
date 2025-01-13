@@ -11,7 +11,7 @@ import SwiftUI
 struct FlavourListItemView: View {
     
     // MARK: Stored properties
-    let flavourToShow: IceCreamFlavour
+    @Binding var flavourToShow: IceCreamFlavour
     
     // MARK: Computed properties
     var body: some View {
@@ -32,17 +32,20 @@ struct FlavourListItemView: View {
             Image(systemName: flavourToShow.isFavourite ? "heart.fill" : "heart")
                 .foregroundStyle(.red)
                 .font(.title2)
+                .onTapGesture {
+                    flavourToShow.isFavourite.toggle()
+                }
             
         }
     }
 }
 
-#Preview {
-    FlavourListItemView(flavourToShow: flavours.first!)
-        .padding()
-}
-
-#Preview {
-    FlavourListItemView(flavourToShow: flavours[1])
-        .padding()
-}
+//#Preview {
+//    FlavourListItemView(flavourToShow: flavours.first!)
+//        .padding()
+//}
+//
+//#Preview {
+//    FlavourListItemView(flavourToShow: flavours[1])
+//        .padding()
+//}

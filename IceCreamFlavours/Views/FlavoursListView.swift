@@ -9,12 +9,15 @@ import SwiftUI
 
 struct FlavoursListView: View {
     
+    // MARK: Stored properties
+    @State private var flavoursList = flavours
+    
     // MARK: Computed properties
     var body: some View {
         
         NavigationStack {
             
-            List(flavours) { currentFlavour in
+            List($flavoursList) { currentFlavour in
                 
                 FlavourListItemView(flavourToShow: currentFlavour)
                 
