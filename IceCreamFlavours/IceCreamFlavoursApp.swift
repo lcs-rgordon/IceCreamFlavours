@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct IceCreamFlavoursApp: App {
+    
+    // MARK: Stored properties
+    @State private var viewModel = FlavoursViewModel(flavours: flavours)
+    
+    // MARK: Computed properties
     var body: some Scene {
         WindowGroup {
-            FlavoursListView()
+            LandingView()
+                .environment(viewModel)
         }
     }
 }

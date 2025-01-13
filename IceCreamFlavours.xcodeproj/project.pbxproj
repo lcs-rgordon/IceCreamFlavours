@@ -13,6 +13,9 @@
 		81DB5CB42D348F1A00BDACAC /* IceCreamFlavoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */; };
 		81DB5CB82D348FA200BDACAC /* IceCreamFlavour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CB72D348F9C00BDACAC /* IceCreamFlavour.swift */; };
 		81DB5CBC2D3493EF00BDACAC /* FlavourListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CBB2D3493EF00BDACAC /* FlavourListItemView.swift */; };
+		81DB5CC32D34AF7B00BDACAC /* FlavoursViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CC22D34AF7600BDACAC /* FlavoursViewModel.swift */; };
+		81DB5CC52D34B64C00BDACAC /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CC42D34B64C00BDACAC /* LandingView.swift */; };
+		81DB5CC72D34B67F00BDACAC /* FavouriteFlavoursListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CC62D34B67F00BDACAC /* FavouriteFlavoursListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavoursApp.swift; sourceTree = "<group>"; };
 		81DB5CB72D348F9C00BDACAC /* IceCreamFlavour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavour.swift; sourceTree = "<group>"; };
 		81DB5CBB2D3493EF00BDACAC /* FlavourListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavourListItemView.swift; sourceTree = "<group>"; };
+		81DB5CC22D34AF7600BDACAC /* FlavoursViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavoursViewModel.swift; sourceTree = "<group>"; };
+		81DB5CC42D34B64C00BDACAC /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		81DB5CC62D34B67F00BDACAC /* FavouriteFlavoursListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFlavoursListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			children = (
 				81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */,
 				81DB5CB62D348F2200BDACAC /* Model */,
+				81DB5CC12D34AF6900BDACAC /* ViewModels */,
 				81DB5CB52D348F1D00BDACAC /* Views */,
 				81DB5CAC2D348F1A00BDACAC /* Preview Content */,
 				81DB5CAD2D348F1A00BDACAC /* Assets.xcassets */,
@@ -77,6 +84,8 @@
 			children = (
 				81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */,
 				81DB5CBB2D3493EF00BDACAC /* FlavourListItemView.swift */,
+				81DB5CC62D34B67F00BDACAC /* FavouriteFlavoursListView.swift */,
+				81DB5CC42D34B64C00BDACAC /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +96,14 @@
 				81DB5CB72D348F9C00BDACAC /* IceCreamFlavour.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		81DB5CC12D34AF6900BDACAC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				81DB5CC22D34AF7600BDACAC /* FlavoursViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DB5CC52D34B64C00BDACAC /* LandingView.swift in Sources */,
 				81DB5CB32D348F1A00BDACAC /* FlavoursListView.swift in Sources */,
+				81DB5CC32D34AF7B00BDACAC /* FlavoursViewModel.swift in Sources */,
 				81DB5CBC2D3493EF00BDACAC /* FlavourListItemView.swift in Sources */,
 				81DB5CB82D348FA200BDACAC /* IceCreamFlavour.swift in Sources */,
 				81DB5CB42D348F1A00BDACAC /* IceCreamFlavoursApp.swift in Sources */,
+				81DB5CC72D34B67F00BDACAC /* FavouriteFlavoursListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

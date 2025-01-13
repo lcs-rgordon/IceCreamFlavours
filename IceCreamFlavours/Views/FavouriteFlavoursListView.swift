@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FavouriteFlavoursListView.swift
 //  IceCreamFlavours
 //
 //  Created by Russell Gordon on 2025-01-12.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FlavoursListView: View {
+struct FavouriteFlavoursListView: View {
     
     // MARK: Stored properties
     @Environment(FlavoursViewModel.self) var viewModel
@@ -19,7 +19,9 @@ struct FlavoursListView: View {
             
             @Bindable var viewModelBindable = viewModel
             
-            List($viewModelBindable.flavours) { currentFlavour in
+            List($viewModelBindable.flavours.filter({ $flavour in
+                $flavour.isFavourite.wrappedValue
+            })) { currentFlavour in
                 
                 FlavourListItemView(flavourToShow: currentFlavour)
                 
@@ -29,11 +31,10 @@ struct FlavoursListView: View {
             
         }
     }
+    
 }
 
 #Preview {
-    FlavoursListView()
+    FavouriteFlavoursListView()
         .environment(FlavoursViewModel(flavours: flavours))
 }
-
-
