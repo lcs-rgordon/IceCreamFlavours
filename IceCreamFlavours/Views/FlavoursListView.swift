@@ -16,19 +16,7 @@ struct FlavoursListView: View {
             
             List(flavours) { currentFlavour in
                 
-                HStack(alignment: .center) {
-                    
-                    Image(currentFlavour.heroImage)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 60)
-                    
-                    Text(currentFlavour.name)
-                        .font(.title2)
-                        .bold()
-                        .fontDesign(.rounded)
-                    
-                }
+                FlavourListItemView(flavourToShow: currentFlavour)
                 
             }
             .listStyle(.plain)
@@ -41,3 +29,5 @@ struct FlavoursListView: View {
 #Preview {
     FlavoursListView()
 }
+
+

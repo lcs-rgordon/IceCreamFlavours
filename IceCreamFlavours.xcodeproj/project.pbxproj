@@ -12,6 +12,7 @@
 		81DB5CB32D348F1A00BDACAC /* FlavoursListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */; };
 		81DB5CB42D348F1A00BDACAC /* IceCreamFlavoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */; };
 		81DB5CB82D348FA200BDACAC /* IceCreamFlavour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CB72D348F9C00BDACAC /* IceCreamFlavour.swift */; };
+		81DB5CBC2D3493EF00BDACAC /* FlavourListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5CBB2D3493EF00BDACAC /* FlavourListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavoursListView.swift; sourceTree = "<group>"; };
 		81DB5CAF2D348F1A00BDACAC /* IceCreamFlavoursApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavoursApp.swift; sourceTree = "<group>"; };
 		81DB5CB72D348F9C00BDACAC /* IceCreamFlavour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamFlavour.swift; sourceTree = "<group>"; };
+		81DB5CBB2D3493EF00BDACAC /* FlavourListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavourListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				81DB5CAE2D348F1A00BDACAC /* FlavoursListView.swift */,
+				81DB5CBB2D3493EF00BDACAC /* FlavourListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81DB5CB32D348F1A00BDACAC /* FlavoursListView.swift in Sources */,
+				81DB5CBC2D3493EF00BDACAC /* FlavourListItemView.swift in Sources */,
 				81DB5CB82D348FA200BDACAC /* IceCreamFlavour.swift in Sources */,
 				81DB5CB42D348F1A00BDACAC /* IceCreamFlavoursApp.swift in Sources */,
 			);
