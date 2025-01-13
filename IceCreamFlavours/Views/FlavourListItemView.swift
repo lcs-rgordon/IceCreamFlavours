@@ -29,11 +29,20 @@ struct FlavourListItemView: View {
             
             Spacer()
             
+            Image(systemName: flavourToShow.isFavourite ? "heart.fill" : "heart")
+                .foregroundStyle(.red)
+                .font(.title2)
+            
         }
     }
 }
 
 #Preview {
     FlavourListItemView(flavourToShow: flavours.first!)
+        .padding()
+}
+
+#Preview {
+    FlavourListItemView(flavourToShow: flavours[1])
         .padding()
 }

@@ -30,7 +30,7 @@ let flavours = [
         id: 3,
         name: "Banana",
         heroImage: "Banana",
-        isFavourite: false,
+        isFavourite: true,
         description: "A tropical treat that tastes like a perfectly ripe banana in every creamy scoop. This flavor will transport you straight to a sunny paradise!"
     ),
     IceCreamFlavour(
